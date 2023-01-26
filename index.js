@@ -9,7 +9,7 @@ const controller = require("./data_register");
 
 //Conexion a mongo
 const db = require("./db.js");
-db("mongodb+srv://rickertDev:rickertGR12@cluster0.pdrojim.mongodb.net/?retryWrites=true&w=majority");
+db("mongodb+srv://rickertDev:<password>@cluster0.pdrojim.mongodb.net/?retryWrites=true&w=majority");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
