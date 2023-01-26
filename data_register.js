@@ -14,7 +14,7 @@ const mySchema = new Schema({
    },
 });
 
-const model = mongoose.model("User", mySchema);
+const model = mongoose.model("Producto", mySchema);
 const Model = model;
 
 //? STORE
@@ -49,7 +49,7 @@ const deleteData = (id) => {
 // Create
 function addDataController(data) {
    if (!data) {
-      return Promise.reject("Datos invalido");
+      return Promise.reject("Data error");
    }
    const newData = {
       dateRegister: new Date(),
